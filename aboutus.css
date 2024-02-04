@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.background-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+}
+.bg-1{
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.5),#FF884B)
+}
+.bg-2{
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.5),#FF884B)
+}
+.about-container{
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    background-color: rgb(23, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.about-head {
+    border-bottom: 2px solid #fff;
+}
+
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+.text-container h1{
+    font-size: 70px;
+    padding: 20px 0px;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: rgba(0, 0, 0, 0.861);
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.text-container a:hover{
+    background-color: white;
+    color: orange;
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{
+        width: 400px;
+        height: 400px;
+    }
+    .text-container h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-container {
+        align-items: center;
+    }
+}
+
+
+
+/* Footer */
+#footer {
+    padding: 60px 0 20px;
+    background: rgb(85,60,64);
+background: radial-gradient(circle, rgba(85,60,64,1) 35%, rgba(12,11,11,1) 94%);
+    position: relative;
+  }
+  .footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-left,
+  .footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right h1 {
+    color: #ff884b;
+    font-size: 35px;
+    padding-right: 10px;
+  }
+  
+  .footer-right span {
+      border-bottom: 2px solid #ff884b;
+  }
+  
+  .footer-left span {
+      border-bottom: 2px solid #ff884b;
+  }
+  
+  .footer-left h1 {
+    color: #ff884b;
+    font-size: 35px;
+  }
+  .footer-row h1 {
+    margin: 10px 0;
+  }
+  .footer-row p {
+    line-height: 35px;
+  }
+  .footer-row a {
+    line-height: 35px;
+  }
+  .footer-left .fa,
+  .footer-right .fa {
+    font-size: 20px;
+    color: #ff884b;
+    margin: 10px;
+  }
+  .footer-img {
+    max-width: 300px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .social-links {
+    text-align: center;
+  }
+  .social-links i {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #ff884b;
+    margin: 40px 5px 0;
+    color: #ff884b;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .social-links i:hover {
+    background: #ff884b;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  .social-links p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .terms {
+    margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .terms a {
+      text-decoration: none;
+      color: #efefef;
+      font-size: 24px;
+  }
+  
+  .terms span {
+      border-bottom: 2px solid white;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .footer-left,
+    .footer-right {
+      flex-basis: 100%;
+      font-size: 14px;
+    }
+    .footer-img {
+      top: 25%;
+    }
+  }
